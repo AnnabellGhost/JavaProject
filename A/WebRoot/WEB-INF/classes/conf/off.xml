@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="off" namespace="/off" extends="default">
+	    <action name="preinsertoff" class="action.OffAction" method="preInsertOff">
+			<result name="success">/insertoff.jsp</result>
+		</action>
+		<action name="insertoff" class="action.OffAction" method="insertOff">
+			<result name="success" type="chain">getalloff</result>
+			<result name="insertofferror">/insertoff.jsp</result>
+		</action>
+		<action name="getalloff" class="action.OffAction" method="getAllOff">
+			<result name="success">/showalloff.jsp</result>
+		</action>
+	    <action name="selectalloffbyoption" class="action.OffAction" method="getAllOffByOption">
+			<result name="success">/showalloff.jsp</result>
+		</action>
+		 <action name="selectoffbystaffid" class="action.OffAction" method="getOffByStaffid">
+			<result name="success">/showalloffforstaff.jsp</result>
+		</action>
+	</package>
+</struts>    

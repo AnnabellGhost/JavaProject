@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="staff" namespace="/staff" extends="default">
+	    <action name="selectallstaffinfo" class="action.StaffAction" method="selectAllStaffinfo">
+			<result name="success">/showallstaffinfo.jsp</result>
+		</action>
+		<action name="selectallstaffinfoforstaff" class="action.StaffAction" method="selectAllStaffinfo">
+			<result name="success">/showallstaffinfoforstaff.jsp</result>
+		</action>
+		<action name="selectpartstaffinfo" class="action.StaffAction" method="selectPartStaffinfo">
+			<result name="success">/showpartstaffinfo.jsp</result>
+		</action>
+		<action name="selectpartstaffinfo2" class="action.StaffAction" method="selectPartStaffinfo">
+			<result name="success">/showpartstaffinfo2.jsp</result>
+		</action>
+		<action name="selectstaffinfo" class="action.StaffAction" method="selectStaffinfo">
+			<result name="success">/updatestaffinfo.jsp</result>
+		</action>
+		<action name="selectstaffinfoforstaff" class="action.StaffAction" method="selectStaffinfo">
+			<result name="success">/updatestaffinfoforstaff.jsp</result>
+		</action>
+		<action name="updatestaffinfo" class="action.StaffAction" method="updateStaffinfo">
+			<result name="success" type="chain">selectallstaffinfo</result>
+			<result name="updatestaffinfoerror" type="chain">selectallstaffinfo</result>
+		</action>
+		<action name="updatestaffinfoforstaff" class="action.StaffAction" method="updateStaffinfo">
+			<result name="success" type="chain">selectallstaffinfoforstaff</result>
+			<result name="updatestaffinfoerror" type="chain">selectallstaffinfoforstaff</result>
+		</action>
+		
+		<action name="selectstaff" class="action.StaffAction" method="selectStaff">
+			<result name="success">/allocatedept.jsp</result>
+		</action>
+		<action name="updatestaff" class="action.StaffAction" method="updateStaff">
+			<result name="success" type="chain">selectallstaffinfo</result>
+			<result name="updatestafferror">/allocatedept.jsp</result>
+		</action>
+		
+		<action name="selectstaffinfobydeptid" class="action.StaffAction" method="selectStaffInfoByDeptid">
+			<result name="success">/showcertaindept.jsp</result>
+		</action>
+	</package>
+</struts>    

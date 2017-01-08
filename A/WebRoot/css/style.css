@@ -1,0 +1,63 @@
+/* CSS Document */
+
+a {text-decoration: NONE;color:#343025;
+   background: url("../images/v01_06.gif");no-repeat;width:88px;height:31px;
+   padding-left: 10px;padding-top: 8px;}
+a:hover{text-decoration: NONE;color:#313A5E;}
+/*body的背景*/
+#a{background-image: url("../images/green_cup.png");color:#343025;}
+#b{background-image: url("../images/concrete_seamless.png");color:#1A1A12;}
+
+/*首页样式*/
+#index {background-image:url("../images/b_1.jpg");}
+#index a { background: url("../images/v01_15.gif");no-repeat;width:88px;height:31px;
+          margin-left: 400px;margin-top:50px;padding-left: 12px;padding-top: 8px;}
+
+
+/*主页样式*/
+.main {padding-left: 50px;padding-top: 100px}
+.main a{ background: url("../images/v01_15.gif");no-repeat;width:88px;height:31px;
+          margin-left: 50px;margin-top:100px;padding-left: 12px;padding-top: 8px;overflow: none}
+.loginfopic{padding-left: 200px;padding-top: 8px;background: url("../images/g-f2gr.gif");no-repeat;
+         width:270px;height:270px;float:left;}
+.loginfo a{ background: url("../images/ch03_06.gif");no-repeat;width:88px;height:31px;
+          margin-top:20px;padding-left: 20px;padding-top: 8px;font-size: 19px}
+.loginfo{color:#E5E4EA;font-size: 24px;}
+/*管理员主页样式*/
+.adminmain{padding-left: 50px;padding-top: 30px}
+.adminmain a{ background: url("../images/sflo071_00.gif");no-repeat;width:200px;height:40px;
+          margin-left: 50px;margin-top:100px;padding-left: 35px;padding-top: 14px;overflow: none}
+          
+          
+/*登录页面样式*/
+.login{margin-left: 200px;margin-top: 180px;font-size: 20px;}
+.login input{margin-left:25px;margin-top: 20px;}
+
+/*表格样式*/
+form{padding-left: 25%;padding-top: 30px}
+td{padding-left: 8px;text-align: center;height: 33px}
+.tablediv{margin-top:50px;margin-left: 50px;}
+.tablepic{background: url("../images/lflo06_01.gif");no-repeat;width:296px;height:16px;}
+
+#form{padding-left: 60px;padding-top: 20px;}
+#form input{background-color: #9DA2AB;}
+
+/*表格样式2显示员工信息较长表格的样式*/
+
+.tablediv2{margin-top:30px;margin-left: 20px;float:left;}
+.tablediv2 a{background: url("../images/b_119.gif");no-repeat;width:88px;height:31px;}
+#space{width:156px;height:19px;}
+
+
+/*杂项*/
+.button{background-image: url("../images/read1.gif");}
+h3{padding-left: 600px;}
+
+#backtoindex a{background-image: url("../images/bsimflo01_01.gif");width:200px;height:40px;padding-left: 50px;}
+.special2{background: url("../images/v01_06.gif");no-repeat;width:88px;height:31px;padding-left: 15px;padding-right: 10px;
+               padding-top: 15px;padding-bottom: 25px;}
+
+.special1{background: url("../images/v01_06.gif");no-repeat;width:88px;height:31px;padding-left: 20px;padding-right: 15px;
+               padding-top: 33px;padding-bottom: 20px;}
+
+

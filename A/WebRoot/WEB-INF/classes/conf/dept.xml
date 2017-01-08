@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="dept" namespace="/dept" extends="default">
+	    <action name="selectalldept" class="action.DeptAction" method="selectAllDept">
+			<result name="success">/showalldept.jsp</result>
+		</action>
+		<action name="selectalldeptforstaff" class="action.DeptAction" method="selectAllDept">
+			<result name="success">/showalldeptforstaff.jsp</result>
+		</action>
+	    <action name="selectdept" class="action.DeptAction" method="selectDept">
+			<result name="success">/updatedept.jsp</result>
+		</action>
+		<action name="updatedept" class="action.DeptAction" method="updateDept">
+			<result name="success" type="chain">selectalldept</result>
+			<result name="updatedepterror">/updatedept.jsp</result>
+		</action>
+	</package>
+</struts>    

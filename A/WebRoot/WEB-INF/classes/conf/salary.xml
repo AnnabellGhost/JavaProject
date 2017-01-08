@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="salsry" namespace="/salary" extends="default">
+	    <action name="preinsertsal" class="action.SalaryAction" method="preInsertSal">
+			<result name="success">/insertSal.jsp</result>
+		</action>
+		<action name="insertsalary" class="action.SalaryAction" method="insertSalary">
+			<result name="success" type="chain">getallsalary</result>
+			<result name="insertsalaryerror">/insertSal.jsp</result>
+			
+		</action>
+		<action name="calculatesalary" class="action.SalaryAction" method="calculateSalary">
+			<result name="success" type="chain">insertsalary</result>
+		</action>
+		<action name="getallsalary" class="action.SalaryAction" method="getAllSalary">
+			<result name="success">/showallsalary.jsp</result>
+		</action>
+		<action name="selectallsalarybyoption" class="action.SalaryAction" method="getAllSalaryByOption">
+			<result name="success">/showallsalary.jsp</result>
+		</action>
+	
+		<action name="getsalarybystaffid" class="action.SalaryAction" method="getSalaryByStaffid">
+			<result name="success">/showallsalaryforstaff.jsp</result>
+		</action>
+	</package>	
+</struts>    
